@@ -1,0 +1,41 @@
+body {
+  box-sizing: border-box;
+  background-color: rgba(26, 26, 26);
+}
+.question_item {
+  border-top: 1px solid #666;
+}
+.question_link {
+  /* color: #3897ff !important; */
+  color: #fff !important;
+  font-size: 18px;
+}
+.easy {
+  color: #00B8A3;
+}
+.medium {
+  color: #FFC01E;
+}
+.hard {
+  color: #FF375F;
+}
+.solution_icon {
+  color: #0A84FF;
+}
+.video_icon {
+  color: #BF5AF2;
+}
+.badge {
+  font-weight: normal;
+  font-size: 14px;
+}
+.badge_category {
+  color: #FFA116;
+  border: 2px solid #FFA116;
+  background-color: rgba(255, 161, 22, 0.2);
+}
+.badge_tags {
+  color: #00D6D6;
+  border: 2px solid #00D6D6;
+  background-color: rgba(0, 214, 214, 0.2);
+}
