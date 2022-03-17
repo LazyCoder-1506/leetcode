@@ -23,13 +23,13 @@ function fetchQuestions () {
           <a href="${question_url}" class="question_link">${question_obj.questionId}. ${question_obj.title}</a>
         </div>
         <div class="col-4 col-md-2 col-lg-1 mb-2 text-center">
-          <span class="text-light">${question_obj.likes}</span>
+          <span class="text-light" data-toggle="tooltip" data-placement="top" data-title="${question_obj.likes} likes">${question_obj.likes}</span>
         </div>
         <div class="col-4 col-md-2 col-lg-1 mb-2 text-center">
-          <span class="text-light">${question_obj.dislikes}</span>
+          <span class="text-light" data-toggle="tooltip" data-placement="top" data-title="${question_obj.dislikes} dislikes">${question_obj.dislikes}</span>
         </div>
         <div class="col-4 col-md-2 col-lg-1 mb-2 text-center">
-          <span class="text-light" data-toggle="tooltip" data-placement="top" data-html="true" title="Accepted : ${question_obj.totalAccepted}<br>Submitted : ${question_obj.totalSubmission}">${question_obj.acRate}</span>
+          <span class="text-light" data-toggle="tooltip" data-placement="top" data-html="true" title="Accepted : ${question_obj.totalAccepted}<br>Submitted : ${question_obj.totalSubmission}<br>Acceptance Rate : ${question_obj.acRate}">${question_obj.acRate}</span>
         </div>
         <div class="col-4 col-md-2 col-lg-1 mb-2 text-center">
           <span class="${question_obj.difficulty.toLowerCase()}">${question_obj.difficulty}</span>

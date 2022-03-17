@@ -1,6 +1,10 @@
 body {
   box-sizing: border-box;
   background-color: rgba(26, 26, 26);
+  font-family: 'Roboto';
+}
+.text_grey {
+  color: #888;
 }
 .question_item {
   border-top: 1px solid #666;
