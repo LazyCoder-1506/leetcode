@@ -11,14 +11,16 @@ function fetchQuestions () {
   .done(function (data) {
     all_questions = data
     all_questions.sort((a,b) => a.likes < b.likes ? 1 : (a.likes > b.likes ? -1 : 0))
+    var i = 0
     for (let question_obj of all_questions) {
+      i++
       var question_url = 'https://leetcode.com/problems/' + question_obj.titleSlug
       question_obj.tagsArray = question_obj.topicTags.substring(0, question_obj.topicTags.length - 1).split(';')
       var tags_html = ''
       for (let tag of question_obj.tagsArray) {
         tags_html += `<span class="badge badge-pill mb-2 badge_tags ml-2">${tag}</span>`
       }
-      var question_html = `<div class="row mx-0 pt-2 question_item" id="question_${question_obj.questionId}">
+      var question_html = `<div class="row mx-0 pt-2 question_item ${i%2 ? 'alternate' : ''}" id="question_${question_obj.questionId}">
         <div class="col-12 col-lg-6 mb-2">
           <a href="${question_url}" class="question_link">${question_obj.questionId}. ${question_obj.title}</a>
         </div>

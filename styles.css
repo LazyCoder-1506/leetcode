@@ -6,11 +6,10 @@ body {
 .text_grey {
   color: #888;
 }
-.question_item {
-  border-top: 1px solid #666;
+.alternate {
+  background-color: #282828;
 }
 .question_link {
-  /* color: #3897ff !important; */
   color: #fff !important;
   font-size: 18px;
 }
