@@ -3,11 +3,17 @@ body {
   background-color: rgba(26, 26, 26);
   font-family: 'Roboto';
 }
+.form-control {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 8px;
+}
 .text_grey {
   color: #888;
 }
 .alternate {
-  background-color: #282828;
+  background-color: #282828 !important;
 }
 .question_link {
   color: #fff !important;
@@ -41,4 +47,19 @@ body {
   color: #00D6D6;
   border: 2px solid #00D6D6;
   background-color: rgba(0, 214, 214, 0.2);
+}
+.has-search .form-control {
+  padding-left: 2.5rem;
+  color: #bbb;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #bbb;
 }

@@ -19,6 +19,24 @@
   <body>
     <section class="mt-5">
       <div class="container">
+        <div class="row mx-0">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+              <input type="text" class="form-control alternate" id="search_box" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="mt-5 text-center d-none" id="loading_screen">
+      <div class="spinner-border text_grey mb-2"></div>
+      <h4 class="font-weight-bold text_grey">Loading</h4>
+    </section> -->
+
+    <section class="mt-5" id="main_content">
+      <div class="container">
         <div class="row mx-0 pt-2" id="table_head">
           <div class="col-12 col-lg-6 mb-3">
             <span class="text_grey font-weight-bold">Question Link</span>
@@ -44,7 +62,10 @@
         </div>
       </div>
       <div class="container" id="questions_cont">
-        <!-- questions -->
+        <div class="mt-5 text-center">
+          <div class="spinner-border text_grey mb-2"></div>
+          <h4 class="font-weight-bold text_grey">Loading</h4>
+        </div>
       </div>
     </section>
 
